@@ -58,4 +58,4 @@ jobs:
           prerelease: false
           title: "Latest Build"
           files: |
-            clash/bin/clash-linux-amd64.gz
+            clash-musl.tar.gz

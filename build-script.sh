@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-set -Eeuo pipefail
+set -e
 
-apk install go make
+apk add go make
 
 export GO111MODULE="auto"
 export GOCACHE="/go/cache/golang"
