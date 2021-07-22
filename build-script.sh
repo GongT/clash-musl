@@ -2,6 +2,8 @@
 
 set -Eeuo pipefail
 
+apk install go make
+
 export GO111MODULE="auto"
 export GOCACHE="/go/cache/golang"
 export GOMODCACHE="/go/cache/golang.mod"
@@ -16,4 +18,3 @@ cd /src
 set -x
 
 make linux-amd64
-gzip clash/bin/clash-linux-amd64
